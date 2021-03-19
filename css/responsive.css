@@ -1,0 +1,183 @@
+/*RESPONSIVE*/
+
+/*MOBILES*/
+@media all and (min-width: 320px) and (max-width: 760px) {
+  main {
+    margin: 0;
+  }
+
+  /*HEADER*/
+  header *{
+    margin: 0;
+    
+  }
+  
+  header nav{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  header a:not(a:nth-child(3)){
+    width: 50%;
+    margin-top: 10%;
+    padding-bottom: 3%;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  header a:focus:not(a:nth-child(3)){
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+    padding-top: 0;
+    color : #0065fc;
+    padding-top: calc(3% +2px);
+    padding-bottom: 3%;
+  }
+
+  header a:nth-child(3){
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding-left: 50%;
+    margin-top: 8%;
+    font-weight: bold;
+    order: -1;
+  }
+  header figure{
+    width: 40%;
+    height: auto;
+    position: absolute;
+  }
+  header img{
+    width: 100%;
+  }
+  /*MENU*/
+  #menu{
+    
+      padding: 5%;
+  }
+  #recherche input:nth-child(3){
+      margin-left: -3%;
+      border-radius: 10px;
+  }
+
+  #recherche input:nth-child(3){
+    border: 1px solid black;
+    display: none;
+  }
+  #recherche i:nth-child(4){
+    opacity: 1;
+    margin-left: -3.5%;
+
+  }
+  #recherche i:nth-child(4){
+    cursor: pointer;
+  }
+  #filtres{
+    margin-top: 0;
+  }
+  #filtres h3{
+    font-size: 1em;
+    margin-top: 3%;
+    padding: 3%;
+  }
+  #filtres button{
+    margin: 1%;
+  }
+  #filtres button:first-child{
+    border: 1px solid red;
+  }
+  #filtres button:nth-child(3){
+    margin-right: 10%;
+  }
+  /*HEBERGEMENTS*/
+  #hebergements {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  #hebergements div {
+    background-color: white;
+    order: 0;
+    width: auto;
+  }
+  #hebergements div figure {
+    margin: 0;
+    width: 85%;
+    height: 11.5em;
+    margin: 10px;
+  }
+
+  /*POPULAIRES*/
+  #populaires {
+    width: auto;
+    order: -1;
+    border-radius: 0px;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  #populaires figcaption {
+    width: 60%;
+  }
+
+  /*ACTIVITES*/
+  #activites h2{
+    width: 80%;
+  }
+  #activites {
+      width: 90%;
+      margin:0;
+      padding-left: 5%;
+      padding-bottom: 7%;
+      
+    display: inline-block;
+    flex-direction: column;
+    
+  }
+  #activites figure{
+      width: 100%;
+  }
+  #activites img{
+      
+      height: 7em;
+  }
+  #activites .first{
+      margin-left: 0;
+      width: 100%;
+  }
+  #activites .first img{
+    height: 7em;
+  }
+  #activites .column{
+      width: 100%;
+  }
+
+  /*FOOTER*/
+  footer{
+      padding-top: 7%;
+      padding-left: 5%;
+      padding-right: 5%;
+      display: block;
+      margin-bottom:-5% ;
+  }
+  footer div{
+      width: auto;
+  }
+}
+
+/*TABLETTES*/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    border: 1px solid purple;
+  }
+  #hebergements {
+    display: block;
+    width: auto;
+  }
+  #hebergements div {
+    order: 1;
+    width: auto;
+  }
+  #populaires {
+    order: -1;
+    width: auto;
+  }
+}
