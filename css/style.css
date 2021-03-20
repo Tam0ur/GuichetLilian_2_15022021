@@ -48,6 +48,7 @@ a {
 #black {
   color: black;
 }
+
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -55,6 +56,7 @@ header {
 }
 header img {
   width: 30%;
+  position: inherit;
 }
 header nav {
   width: 30%;
@@ -69,8 +71,7 @@ a{
   width: 30%;
   text-align: center;
 }
-a:hover, a:focus{
-  
+header a:hover, header a:focus{
 
   color : #0065FC;
   border-top: 2px solid #0065FC;
@@ -157,7 +158,6 @@ a:hover, a:focus{
 /*FILTRES*/
 #filtres{
   font-weight: bold;
-  margin-top: -10%;
 }
 #filtres button{
   
