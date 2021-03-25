@@ -47,7 +47,8 @@
     position: absolute;
   }
   header img{
-    width: 100%;
+    margin-left: 10%;
+    width: 70%;
   }
   /*MENU*/
   #menu{
@@ -174,14 +175,14 @@
     width: 100%;
   }
   header a{
-    width: 33%;
+    width: 33.3%;
   }
   header a:hover, header a:focus{
 
     color : #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 7.2%;
-    padding-bottom: calc(7.5% + 1px);
+    padding-top: 5.7%;
+    padding-bottom: calc(6% + 1px);
   }
 
   /*MENU*/
