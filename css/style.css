@@ -70,7 +70,7 @@ a{
   width: 30%;
   text-align: center;
 }
-header a:hover, header a:focus{
+header a:hover:not(a:nth-child(3)), header a:focus:not(a:nth-child(3)){
 
   color : #0065FC;
   border-top: 2px solid #0065FC;
@@ -334,12 +334,8 @@ header a:hover, header a:focus{
 }
 
 /*ACTIVITÉS*/
-#activites h2{
-  border: 1px solid blue;
-  width: 100%;
-}
+
 #activites {
-  border: 1px solid red;
 
   width: auto;
   margin-top: 3%;
@@ -367,38 +363,57 @@ header a:hover, header a:focus{
 }
 #activites img{
   object-fit: cover;
-  height: 100%;
 }
 #activites .first{
   width: 25%;
+
+}
+#activites .first{
+  width: 25%;
+  height: 30em;
   margin: 0;
 }
+
 #activites .first img{
   
   height: 100%;
 }
 #activites .column {
   width: 25%;
+  max-height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   
-  display: block;
+}
+.column figure{
+  margin-top: 0;
+  height: 100%;
 }
 
 
-.column figure{
-  margin: 0;
+
+.column figure:nth-child(2){
+  margin-bottom: 0;
+}
+#activites .column:nth-child(5) figure{
+
   height: 25em;
+  margin-right: 0;
+}
+
+.column img{
+  height: 100%;
 }
 
 #activites figcaption{
   padding: 20px;
-  
 }
 
-#fort {
-  align-self : stretch;
-}
+
 #frioul {
-  max-height: 10em;
+
+  max-height: 9em;
 }
 
 
