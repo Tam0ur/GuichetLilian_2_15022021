@@ -247,3 +247,10 @@
     padding-right: 2%;
   }
 }
+
+@media all and (min-width: 1024px) and (max-width: 1345px){
+  #hebergements h3,p:not(p:last-child){
+    border: 1px solid red;
+    font-size: 1.35vw;
+  }
+}
