@@ -80,6 +80,14 @@
     margin-bottom: 10px;
   }
   /*HEBERGEMENTS*/
+  div h2{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hebergements h2{
+    margin-left: auto;
+  }
   #hebergements {
     display: flex;
     flex-direction: column;
@@ -92,12 +100,29 @@
   }
   #hebergements div figure {
     margin: 0;
-    width: 85%;
-    height: 12em;
-    margin: 10px;
+    width: 90%;
+    margin-top: 15px;
+    
+  }
+
+  #hebergements img:not(#populaires img){
+    height: 10em;
+  }
+
+  #hebergements p:last-child{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    
   }
 
   /*POPULAIRES*/
+  #populaires h2{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
   #populaires {
     width: auto;
     order: -1;
@@ -108,31 +133,61 @@
   #populaires figcaption {
     width: 60%;
   }
+  
+  #populaires img{
+    height: 10em;
+  }
 
   /*ACTIVITES*/
+  #activites h2{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   #activites {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
   }
-  #activites h2 {
-    width: 90%;
+  
+  #ctivites figure{
+    width: 100%;
+    
   }
-  #activites figure {
-    margin: inherit;
-    max-height: 20em;
-  }
-  #activites .first {
-    max-height: 15em;
-    width: 90%;
-  }
-
-  #activites .column {
+  #activites .first{
     margin-top: inherit;
-    margin-bottom: inherit;
     width: 90%;
+    
+    margin-left: auto;
+    margin-right: auto;
   }
+  #activites .first img{
+    height: 10em;
+  }
+  #activites .column {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .column figure{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #activites img{
+    height: 10em;
+  }
+  
+  #activites figure {
+    width: 100%;
+    
+  }
+  .column:nth-child(5) figure{
+    width: 100%;
+  }
+  #frioul{
+    margin-bottom: 0;
+  }
+  
 
   /*FOOTER*/
   footer {
@@ -190,30 +245,40 @@
     margin-bottom: 2%;
   }
   #populaires figure {
-    width: 92%;
+    width: 90%;
   }
-
+  #populaires img{
+    height: 12em;
+  }
+  
+  #activites{
+    justify-content: space-between;
+  }
   #activites img {
     width: 100%;
-    
   }
   #activites figure {
     width: auto;
   }
   #activites .first {
     width: 50%;
-    margin: auto;
+    height: 25em;
     margin-left: 0;
-    padding: auto;
   }
   .first img{
     height: 20em;
+    
   }
-  .column img{
+  #activites .column{
+    height: 25em;
+    
+    
+  }
+  #activites .column img{
     height: 100%;
   }
-  .column figure{
-    height: 11em;
+  #activites .column figure{
+    height: 100%;
   }
   #activites .column {
     display: flex;
@@ -221,11 +286,15 @@
     
     width: 45%;
   }
-  .column figure {
+  #activites .column figure {
     margin-left: 0;
     margin-right: 0;
   }
   
+  #activites figure:nth-child(2):not(.first){
+    
+    margin-bottom: 0;
+  }
 
 
   /*FOOTER*/
