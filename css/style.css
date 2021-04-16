@@ -30,7 +30,7 @@ p {
   margin: 0;
 }
 main {
-  margin-left: 2%;
+  margin-left: 3%;
   margin-right: 3%;
 }
 
@@ -45,12 +45,15 @@ a {
 }
 #blue {
   color: #0065fc;
+  padding-right: 0;
 }
 #black {
   color: black;
 }
 
 header {
+  margin-left: 3%;
+  margin-right: 3%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -60,6 +63,7 @@ header img {
 }
 header nav {
   padding-top: 30px;
+
 }
 header a {
   padding: 28px;
@@ -236,7 +240,7 @@ header a:hover:not(#blue){
 /*POPULAIRES*/
 
 #populaires .fa-star {
-  display: inline-block;
+  display: flex;
 
   align-items: flex-end;
 }
